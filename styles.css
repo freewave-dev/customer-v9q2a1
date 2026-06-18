@@ -259,9 +259,10 @@ main { padding-top: 84px; }
   position: relative;
   min-height: 92vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
-  padding: var(--space-xl) 0;
+  padding: var(--space-xl) 0 3rem;
 }
 .hero-bg {
   position: absolute;
@@ -299,11 +300,9 @@ main { padding-top: 84px; }
 .hero .eyebrow::before { background: var(--color-gold); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
 .hero-meta {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 0;
-  right: 0;
+  position: relative;
   z-index: 2;
+  margin-top: 3.5rem;
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
@@ -439,7 +438,7 @@ main { padding-top: 84px; }
 .service-card:hover::before { opacity: 1; }
 .service-card:hover * { color: var(--color-cream); position: relative; z-index: 1; }
 .service-card:hover .service-icon { background: rgba(250, 246, 239, 0.15); border-color: rgba(250, 246, 239, 0.3); }
-.service-card:hover .service-num { color: rgba(250, 246, 239, 0.5); }
+.service-card:hover .service-num { color: rgba(250, 246, 239, 0.5); position: absolute; }
 
 .service-icon {
   width: 56px;
