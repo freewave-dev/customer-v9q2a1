@@ -273,7 +273,9 @@ main { padding-top: 84px; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, rgba(26, 32, 39, 0.78) 0%, rgba(26, 32, 39, 0.5) 55%, rgba(26, 32, 39, 0.25) 100%);
+  background:
+    linear-gradient(115deg, rgba(20, 24, 29, 0.92) 0%, rgba(20, 24, 29, 0.74) 50%, rgba(20, 24, 29, 0.55) 100%),
+    linear-gradient(0deg, rgba(20, 24, 29, 0.45) 0%, rgba(20, 24, 29, 0) 45%);
   z-index: 1;
 }
 .hero-bg img {
